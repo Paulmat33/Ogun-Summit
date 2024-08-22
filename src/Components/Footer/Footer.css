@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   height: 172px;
   margin-top: 100px;
+  background-position: center;
 }
 .footer {
   background: var(--darkblack);
@@ -14,10 +15,6 @@
   flex-direction: column;
   justify-items: center;
 }
-/* .logo-img {
-  margin: 0 auto;
-  width: 38.27px;
-} */
 .footer-links {
   display: flex;
   flex-direction: row;

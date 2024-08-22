@@ -11,6 +11,8 @@ import Exploring from "../../assets/Exploring-Others.png";
 import Apple from "../../assets/Apple-Store.png";
 import Goggle from "../../assets/Google-Store.png";
 import Frame from "../../assets/Pics-Frame.png";
+
+
 const SectionD = () => {
   return (
     <div className="sectionD container">

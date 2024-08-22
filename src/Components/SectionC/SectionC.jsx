@@ -17,7 +17,7 @@ const SectionC = () => {
             Increase your start visibility and reach by booking a boot with us
             today
           </p>
-          <button className="register">
+          <button className="register-2">
             Become an exhibitor
             <img src={rightarrow} alt="arrow" />
           </button>
@@ -34,7 +34,7 @@ const SectionC = () => {
             Join our masterclass trainers to help us train young individuals at
             ODS. It’s free and we don’t charge anyone for this.
           </p>
-          <button className="register">
+          <button className="register-2">
             Apply to conduct a masterclass
             <img src={rightarrow} alt="arrow" />
           </button>
@@ -44,7 +44,8 @@ const SectionC = () => {
 
       <div className="schedule">
         <h1>Schedule of event</h1>
-        <p>Get to know our agenda to help you plan ahead for this year</p>
+        <p className="plan">Get to know our agenda to help you plan ahead for this year</p>
+        <p className="digital">Get to know the agenda we have for the 3 days of Ogun digital summit this year</p>
       </div>
 
       <div className="tab">
@@ -75,7 +76,7 @@ const SectionC = () => {
           </div>
         </div>
 
-        <div className="event-2">
+        <div className="event-4">
           <div className="event-date">
             <h5>Thursday</h5>
             <p>31st October</p>

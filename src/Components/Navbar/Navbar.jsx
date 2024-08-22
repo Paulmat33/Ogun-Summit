@@ -1,5 +1,5 @@
 import './Navbar.css'
-import Logo from '../../assets/Logo.png'
+import Logo from '../../assets/footer-logo.png'
 import arrow from '../../assets/arrow.png';
 import rightarrow from '../../assets/arrow-right.png'
 

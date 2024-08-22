@@ -45,4 +45,30 @@ li {
   letter-spacing: 0.20000000298023224px;
   text-align: left;
   color: var(--white);
+  cursor: pointer;
+}
+
+@media (max-width:1024px){
+  nav {
+    padding-left: 100px;
+    padding-right: 150px;
+    gap: 16px;
+  }
+}
+
+@media (max-width:768px) {
+  nav{
+    padding-left: 15px;
+    padding-right: 50px;
+  }
+}
+
+@media(min-width:320px) and (max-width:767px){
+  nav{
+    display: none;
+  }
+  .register{
+    display: none;
+  }
+  
 }

@@ -1,5 +1,6 @@
 .hero {
   background-image: url("../../assets/Lines-1.png");
+  background-position: center;
 }
 .hero-section {
   margin: 0 auto;
@@ -44,6 +45,24 @@ span {
   align-items: center;
   padding-bottom: 100px;
 }
+.register-2 {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px 10px 12px;
+  gap: 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background: var(--green);
+  font-family: var(--inter);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: var(--white);
+  cursor: pointer;
+}
 .btn2 {
   display: flex;
   align-items: center;
@@ -83,15 +102,11 @@ span {
   background-image: url("../../assets/Header-bg.png");
   height: 172px;
   background-repeat: no-repeat;
+  background-position: center;
   margin-top: 100px;
 }
 .countdown {
   background: var(--darkblack);
-  box-shadow: 0px 4px 10px 0px #0000001a;
-  box-shadow: 0px 17px 17px 0px #00000017;
-  box-shadow: 0px 39px 23px 0px #0000000d;
-  box-shadow: 0px 69px 28px 0px #00000003;
-  box-shadow: 0px 108px 30px 0px #00000000;
   width: 700px;
   border-radius: 16px;
   border: 1px;
@@ -99,7 +114,8 @@ span {
   display: flex;
   position: absolute;
   top: -25px;
-  left: 350px;
+  left: 360px;
+  right: 360px;
   flex-direction: row;
   align-items: center;
   gap: 32px;
@@ -153,4 +169,118 @@ span {
   letter-spacing: 0.20000000298023224px;
   text-align: left;
   color: #b0c5d6;
+}
+
+@media (max-width: 1024px) {
+  .countdown {
+    left: 150px;
+    right: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    width: 60%;
+  }
+  .hero-section h1 {
+    line-height: 40px;
+    font-size: 40px;
+  }
+  span {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .hero-section p {
+    font-size: 14px;
+  }
+  .sponsor-img {
+    gap: 25px;
+  }
+  .background-div {
+    height: 130px;
+  }
+  .countdown {
+    left: 120px;
+    right: 120px;
+    width: 570px;
+    gap: 25px;
+  }
+  .countdown-div {
+    padding: 8px 0px 8px 8px;
+  }
+  .days {
+    padding: 0px 8px;
+  }
+  .number {
+    font-size: 16px;
+  }
+  .date-text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hero-section {
+    margin: 0 auto;
+    width: 335px;
+  }
+  .hero-section h1 {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    width: 323px;
+    padding-bottom: 24px;
+  }
+  span {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+  .hero-section p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    padding-bottom: 24px;
+  }
+  .sponsor-img {
+    display: none;
+  }
+  .button {
+    justify-content: start;
+  }
+  .background-div {
+    height: 84px;
+  }
+  .countdown {
+    flex-direction: column;
+    align-items: center;
+    width: 335px;
+    left: 20px;
+    right: 20px;
+    top: -80px;
+  }
+  .number {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+  }
+
+  .days-text{
+font-size: 12px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 3px;
+
+  }
+  .date {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

@@ -31,6 +31,24 @@
   color: var(--textcol);
   padding-bottom: 24px;
 }
+.register-2 {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px 10px 12px;
+  gap: 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background: var(--green);
+  font-family: var(--inter);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: var(--white);
+  cursor: pointer;
+}
 .showcase-2 {
   display: flex;
   justify-content: space-between;
@@ -48,7 +66,7 @@
   padding-top: 100px;
   padding-bottom: 16px;
 }
-.schedule p {
+.plan {
   font-family: var(--inter);
   color: var(--textcol);
   font-size: 16px;
@@ -57,6 +75,9 @@
   letter-spacing: 0.20000000298023224px;
   text-align: center;
   padding-bottom: 48px;
+}
+.digital {
+  display: none;
 }
 .tab {
   display: flex;
@@ -107,7 +128,7 @@
   letter-spacing: -0.5px;
   text-align: center;
 }
-.event{
+.event {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,6 +139,13 @@
   padding: 16px;
   width: 504px;
   border-radius: 16px;
+}
+.event-4 {
+  background: var(--border);
+  padding: 16px;
+  width: 504px;
+  border-radius: 16px;
+  margin-top: 25px;
 }
 .event-date {
   background: var(--white);
@@ -165,4 +193,110 @@
   text-align: left;
   color: var(--textcol);
   padding-bottom: 12px;
+}
+
+@media (max-width: 1024px) {
+  .showcase {
+    gap: 20px;
+  }
+  .showcase-text {
+    width: 400px;
+  }
+  .event-2 {
+    width: 45%;
+  }
+  .event-4 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    flex-direction: column;
+  }
+  .showcase-2 {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .showcase {
+    flex-direction: column-reverse;
+    padding-bottom: 80px;
+  }
+  .showcase-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    width: 335px;
+  }
+
+  .showcase-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    width: 335px;
+  }
+  .schedule h1 {
+    width: 335px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+  .plan {
+    display: none;
+  }
+  .digital {
+    display: block;
+    font-family: var(--inter);
+    color: var(--textcol);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .tab {
+    align-items: start;
+    margin-left: -90px;
+    padding-bottom: 48px;
+  }
+  .btn1 {
+    width: 132px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+  }
+  .off-conference {
+    width: 126px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+  }
+  .all {
+    width: 96px;
+    padding: 8px 12px;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+  }
+  .event {
+    flex-direction: column;
+  }
+  .event-2{
+    width: 335px;
+padding: 16px ;
+  }
+  .event-4{
+    display: none;
+  }
 }

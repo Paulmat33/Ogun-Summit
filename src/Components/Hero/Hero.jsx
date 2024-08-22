@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
 
         <div className="button">
-          <button className="register">
+          <button className="register-2">
             Register
             <img src={rightarrow} alt="arrow" />
           </button>

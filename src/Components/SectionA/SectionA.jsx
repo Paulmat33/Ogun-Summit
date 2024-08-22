@@ -43,6 +43,24 @@ const SectionA = () => {
             <p className="number-text">Sessions</p>
           </div>
         </div>
+
+
+        <div className="attendees-number-sm">
+          <div className="attendees-number-div2">
+            <p className="number-plus1">5000+</p>
+            <p className="number-text1">Attendees</p>
+          </div>
+
+          <div className="attendees-number-div2">
+            <p className="number-plus1">60+</p>
+            <p className="number-text2">Speakers</p>
+          </div>
+
+          <div className="attendees-number-div2">
+            <p className="number-plus1">20+</p>
+            <p className="number-text2">Sessions</p>
+          </div>
+        </div>
       </div>
     </div>
   );
