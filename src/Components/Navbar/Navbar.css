@@ -1,0 +1,48 @@
+.header {
+  padding-top: 8px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  padding-left: 213px;
+  padding-right: 213px;
+  gap: 16px;
+}
+li {
+  padding-left: 16px;
+  font-family: var(--inter);
+  color: var(--textcol);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.register {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px 10px 12px;
+  gap: 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background: var(--green);
+  font-family: var(--inter);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: var(--white);
+}
