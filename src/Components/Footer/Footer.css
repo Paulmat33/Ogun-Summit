@@ -57,3 +57,35 @@
   letter-spacing: 0.20000000298023224px;
   text-align: left;
 }
+
+@media (max-width: 425px) {
+  .footer-color {
+    height: 87px;
+    margin-top: 80px;
+  }
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer-logo {
+    display: grid;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+}
+.footer-social-div{
+  flex-direction: column;
+}
+.footer-copyright p{
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+padding-top: 48px;
+
+}
+}

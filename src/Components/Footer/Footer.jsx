@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-copyright">
-            <p>© 2022 Ogun Digital Summit. All rights reserved</p>
+            <p>Copyright 2022 Ogun Digital Summit. All rights reserved</p>
           </div>
         </div>
       </div>

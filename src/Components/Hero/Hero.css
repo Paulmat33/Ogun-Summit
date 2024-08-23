@@ -219,7 +219,7 @@ span {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 425px) {
   .hero-section {
     margin: 0 auto;
     width: 335px;
