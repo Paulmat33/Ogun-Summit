@@ -4,7 +4,7 @@ import Network from "../../assets/Network.png";
 import Generate from "../../assets/Generate-Leads.png";
 import Gain from "../../assets/Gain-Exposture.png";
 import Innovate from "../../assets/Innovation.png";
-import Top from "../../assets/Top-speakers.png";
+import Top from "../../assets/Top-Speakers.png";
 import Insight from "../../assets/Fresh-insights.png";
 import Masterclass from "../../assets/Freemaster-Class.png";
 import Exploring from "../../assets/Exploring-Others.png";

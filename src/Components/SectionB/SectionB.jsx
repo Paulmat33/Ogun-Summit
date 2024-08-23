@@ -1,6 +1,6 @@
 import "./SectionB.css";
 import video from "../../assets/Video.png";
-// import fire from "../../assets/Fire.png";
+import fire from "../../assets/fire.png";
 
 const SectionB = () => {
   return (
@@ -33,7 +33,7 @@ const SectionB = () => {
 
       <div className="access-industry">
         <div className="sectionB-text-3">
-          {/* <img src={fire} alt="fire" /> */}
+          <img src={fire} alt="fire" />
           <h4>Access to Industry Experts</h4>
           <p>
             You can directly and indirectly learn and engage with industry
