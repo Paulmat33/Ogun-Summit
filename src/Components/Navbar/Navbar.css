@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
 }
-nav {
+.nav {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -23,6 +23,9 @@ li {
   line-height: 24px;
   letter-spacing: 0.20000000298023224px;
   text-align: left;
+}
+.bar {
+  display: none;
 }
 .arrow {
   display: flex;
@@ -47,8 +50,11 @@ li {
   color: var(--white);
   cursor: pointer;
 }
+.mobile-nav-container {
+  display: none;
+}
 
-@media (max-width:1024px){
+@media (max-width: 1024px) {
   nav {
     padding-left: 100px;
     padding-right: 150px;
@@ -56,19 +62,100 @@ li {
   }
 }
 
-@media (max-width:768px) {
-  nav{
+@media (max-width: 768px) {
+  nav {
     padding-left: 15px;
     padding-right: 50px;
   }
 }
 
 @media (max-width: 425px) {
-  nav{
+  .header {
+    justify-content: space-between;
+  }
+  .logo-img {
+    width: 27.1px;
+    height: 34px;
+  }
+  .nav {
     display: none;
   }
-  .register{
+  .register {
     display: none;
   }
-  
+  .bar {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  .mobile-nav-container {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 335px;
+    height: 408px;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .mobile-nav-container nav {
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: #0000001a #00000017 #0000000d #00000003 #00000000;
+    padding: 20px 20px 40px 20px;
+    transition: 0.3s ease;
+  }
+
+  .mobile-nav-container nav li {
+    padding-bottom: 24px;
+    list-style: none;
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  .sm-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .sm-register-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 12px 10px 12px;
+    gap: 4px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background: var(--green);
+    font-family: var(--inter);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+  }
+  .sm-btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    font-family: var(--inter);
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    border: none;
+  }
 }
