@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import "./Hero.css";
 import rightarrow from "../../assets/arrow-right.png";
 import rightgreen from "../../assets/arrow-green.png";
@@ -8,6 +9,47 @@ import Technomy from "../../assets/Technomy.png";
 import Daily from "../../assets/Ogun-daily.png";
 
 const Hero = () => {
+  const [days, setDays] = useState(() => {
+    const storedDays = localStorage.getItem('days');
+    return storedDays ? parseInt(storedDays) : 83;
+  });
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const totalSeconds = days * 24 * 60 * 60 + hours * 60 * 60 + minutes * 60 + seconds;
+      if (totalSeconds > 0) {
+        const newSeconds = totalSeconds - 1;
+        const newDays = Math.floor(newSeconds / (24 * 60 * 60));
+        const newHours = Math.floor((newSeconds % (24 * 60 * 60)) / (60 * 60));
+        const newMinutes = Math.floor((newSeconds % (60 * 60)) / 60);
+        const newSecondsValue = newSeconds % 60;
+        setDays(newDays);
+        setHours(newHours);
+        setMinutes(newMinutes);
+        setSeconds(newSecondsValue);
+        localStorage.setItem('days', newDays);
+        localStorage.setItem('hours', newHours);
+        localStorage.setItem('minutes', newMinutes);
+        localStorage.setItem('seconds', newSecondsValue);
+      }
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, [days, hours, minutes, seconds]);
+
+  useEffect(() => {
+    const storedHours = localStorage.getItem('hours');
+    const storedMinutes = localStorage.getItem('minutes');
+    const storedSeconds = localStorage.getItem('seconds');
+    if (storedHours && storedMinutes && storedSeconds) {
+      setHours(parseInt(storedHours));
+      setMinutes(parseInt(storedMinutes));
+      setSeconds(parseInt(storedSeconds));
+    }
+  }, []);
+
   return (
     <div className="hero">
       <div className="hero-section">
@@ -35,21 +77,15 @@ const Hero = () => {
         <div className="support">
           <h5>Proudly supported by</h5>
           <div className="sponsor-img">
-            <div>
-              <img src={Grazac} alt="Grazac" />
-            </div>
-            <div>
-              <img src={Afex} alt="Afex" />
-            </div>
-            <div>
-              <img src={Ogun} alt="Ogun" />
-            </div>
-            <div>
-              <img src={Technomy} alt="Technomy" />
-            </div>
-            <div>
-              <img src={Daily} alt="Daily" />
-            </div>
+            <img src={Grazac} alt="Grazac" className="moving-img" />
+
+            <img src={Afex} alt="Afex" className="moving-img" />
+
+            <img src={Ogun} alt="Ogun" className="moving-img" />
+
+            <img src={Technomy} alt="Technomy" className="moving-img" />
+
+            <img src={Daily} alt="Daily" className="moving-img" />
           </div>
         </div>
       </div>
@@ -59,22 +95,22 @@ const Hero = () => {
         <div className="countdown">
           <div className="countdown-div">
             <div className="days">
-              <p className="number">83</p>
+              <p className="number">{days}</p>
               <p className="days-text">DAYS</p>
             </div>
 
             <div className="days">
-              <p className="number">6</p>
+              <p className="number">{hours}</p>
               <p className="days-text">HRS</p>
             </div>
 
             <div className="days">
-              <p className="number">3</p>
+              <p className="number">{minutes}</p>
               <p className="days-text">MINS</p>
             </div>
 
             <div className="days">
-              <p className="number">3</p>
+              <p className="number">{seconds}</p>
               <p className="days-text">SEC</p>
             </div>
           </div>

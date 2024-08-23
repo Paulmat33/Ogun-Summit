@@ -247,11 +247,27 @@ span {
     text-align: left;
     padding-bottom: 24px;
   }
-  .sponsor-img {
-    display: none;
-  }
+
   .button {
     justify-content: start;
+  }
+
+  .sponsor-img {
+    position: relative;
+    animation: move-left 15s linear infinite;
+  }
+  .moving-img {
+    overflow-x: hidden;
+    /* width: 100%; */
+  }
+
+  @keyframes move-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
   .background-div {
     height: 84px;
@@ -271,16 +287,14 @@ span {
     letter-spacing: 0.20000000298023224px;
   }
 
-  .days-text{
-font-size: 12px;
-font-weight: 600;
-line-height: 20px;
-letter-spacing: 3px;
-
+  .days-text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
   }
   .date {
     flex-direction: column;
     align-items: center;
   }
-
 }
