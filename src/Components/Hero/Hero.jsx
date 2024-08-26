@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import rightarrow from "../../assets/arrow-right.png";
 import rightgreen from "../../assets/arrow-green.png";
@@ -9,46 +9,41 @@ import Technomy from "../../assets/Technomy.png";
 import Daily from "../../assets/Ogun-daily.png";
 
 const Hero = () => {
-  const [days, setDays] = useState(() => {
-    const storedDays = localStorage.getItem('days');
-    return storedDays ? parseInt(storedDays) : 83;
-  });
+  const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const totalSeconds = days * 24 * 60 * 60 + hours * 60 * 60 + minutes * 60 + seconds;
-      if (totalSeconds > 0) {
-        const newSeconds = totalSeconds - 1;
-        const newDays = Math.floor(newSeconds / (24 * 60 * 60));
-        const newHours = Math.floor((newSeconds % (24 * 60 * 60)) / (60 * 60));
-        const newMinutes = Math.floor((newSeconds % (60 * 60)) / 60);
-        const newSecondsValue = newSeconds % 60;
-        setDays(newDays);
-        setHours(newHours);
-        setMinutes(newMinutes);
-        setSeconds(newSecondsValue);
-        localStorage.setItem('days', newDays);
-        localStorage.setItem('hours', newHours);
-        localStorage.setItem('minutes', newMinutes);
-        localStorage.setItem('seconds', newSecondsValue);
-      }
-    }, 1000);
-    return () => clearInterval(intervalId);
-  }, [days, hours, minutes, seconds]);
+  const targetDate = new Date("2024-10-29T12:00:00.000Z"); // replace with your target date
 
   useEffect(() => {
-    const storedHours = localStorage.getItem('hours');
-    const storedMinutes = localStorage.getItem('minutes');
-    const storedSeconds = localStorage.getItem('seconds');
-    if (storedHours && storedMinutes && storedSeconds) {
-      setHours(parseInt(storedHours));
-      setMinutes(parseInt(storedMinutes));
-      setSeconds(parseInt(storedSeconds));
-    }
-  }, []);
+    const intervalId = setInterval(() => {
+      const now = new Date();
+      const diff = targetDate.getTime() - now.getTime();
+
+      if (diff <= 0) {
+        // countdown finished
+        setDays(0);
+        setHours(0);
+        setMinutes(0);
+        setSeconds(0);
+      } else {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        setDays(days);
+        setHours(hours);
+        setMinutes(minutes);
+        setSeconds(seconds);
+      }
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [targetDate]);
 
   return (
     <div className="hero">
@@ -76,7 +71,7 @@ const Hero = () => {
 
         <div className="support">
           <h5>Proudly supported by</h5>
-          <div className="sponsor-img">
+          {/* <div className="sponsor-img">
             <img src={Grazac} alt="Grazac" className="moving-img" />
 
             <img src={Afex} alt="Afex" className="moving-img" />
@@ -86,7 +81,7 @@ const Hero = () => {
             <img src={Technomy} alt="Technomy" className="moving-img" />
 
             <img src={Daily} alt="Daily" className="moving-img" />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -95,22 +90,22 @@ const Hero = () => {
         <div className="countdown">
           <div className="countdown-div">
             <div className="days">
-              <p className="number">{days}</p>
+              <p className="number">{days.toString().padStart(2, "0")}</p>
               <p className="days-text">DAYS</p>
             </div>
 
             <div className="days">
-              <p className="number">{hours}</p>
+              <p className="number">{hours.toString().padStart(2, "0")}</p>
               <p className="days-text">HRS</p>
             </div>
 
             <div className="days">
-              <p className="number">{minutes}</p>
+              <p className="number">{minutes.toString().padStart(2, "0")}</p>
               <p className="days-text">MINS</p>
             </div>
 
             <div className="days">
-              <p className="number">{seconds}</p>
+              <p className="number">{seconds.toString().padStart(2, "0")}</p>
               <p className="days-text">SEC</p>
             </div>
           </div>

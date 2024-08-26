@@ -28,7 +28,7 @@
   padding-right: 160px;
   max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 @media (max-width:1024px){

@@ -64,8 +64,17 @@ li {
 
 @media (max-width: 768px) {
   nav {
-    padding-left: 15px;
+    padding-left: 50px;
     padding-right: 50px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 16px;
   }
 }
 
