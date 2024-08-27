@@ -44,8 +44,13 @@ const SectionC = () => {
 
       <div className="schedule">
         <h1>Schedule of event</h1>
-        <p className="plan">Get to know our agenda to help you plan ahead for this year</p>
-        <p className="digital">Get to know the agenda we have for the 3 days of Ogun digital summit this year</p>
+        <p className="plan">
+          Get to know our agenda to help you plan ahead for this year
+        </p>
+        <p className="digital">
+          Get to know the agenda we have for the 3 days of Ogun digital summit
+          this year
+        </p>
       </div>
 
       <div className="tab">
@@ -62,7 +67,7 @@ const SectionC = () => {
           </div>
 
           <div>
-            <div className="confrence-day">
+            <div className="conference-day">
               <h5>Conference Day 1</h5>
             </div>
             <div className="agenda-list">
@@ -97,8 +102,6 @@ const SectionC = () => {
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   );

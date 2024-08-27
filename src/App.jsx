@@ -15,11 +15,11 @@ function App() {
     <div>
       <Navbar/>
       <Hero/>
-      <SectionA/>
+      {/* <SectionA/>
       <SectionB/>
       <SectionC/>
       <SectionD/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }

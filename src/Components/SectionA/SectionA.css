@@ -1,5 +1,5 @@
 .sectionA {
-  background: var(--darkblack);
+  background: var(--dark-black);
 }
 .section-A {
   padding-top: 100px;
@@ -7,7 +7,7 @@
 }
 .sectionA h1 {
   font-family: var(--platypi);
-  color: var(--lightwhite);
+  color: var(--light-white);
   font-size: 34px;
   font-weight: 600;
   line-height: 40px;
@@ -23,7 +23,7 @@
   line-height: 24px;
   letter-spacing: 0.20000000298023224px;
   text-align: left;
-  color: var(--lightsub);
+  color: var(--light-sub);
   width: 505px;
   padding-bottom: 24px;
 }
@@ -61,7 +61,7 @@
   flex-direction: row;
   align-items: center;
   font-family: var(--inter);
-  color: var(--lightwhite);
+  color: var(--light-white);
   gap: 16px;
   padding: 24px 40px;
 }

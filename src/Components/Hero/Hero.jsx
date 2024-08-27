@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import "./Hero.css";
 import rightarrow from "../../assets/arrow-right.png";
 import rightgreen from "../../assets/arrow-green.png";
@@ -14,7 +14,7 @@ const Hero = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const targetDate = new Date("2024-10-29T12:00:00.000Z"); // replace with your target date
+  const targetDate =useMemo(() => new Date("2024-10-29T12:00:00.000Z"), []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -52,9 +52,9 @@ const Hero = () => {
           Innovation: <span>Pathway to our nation’s prosperity</span>
         </h1>
         <p>
-          Ogun Digital Summit 2024 is focused on  improving collaborations,
+          Ogun Digital Summit 2024 is focused on improving collaborations,
           paving the way for new innovations and igniting conversation towards
-          technology advancements and prosperity for Nigeria's digital
+          technology advancements and prosperity for Nigeria’s digital
           technology ecosystem.
         </p>
 
@@ -71,7 +71,7 @@ const Hero = () => {
 
         <div className="support">
           <h5>Proudly supported by</h5>
-          {/* <div className="sponsor-img">
+          <div className="sponsor-img">
             <img src={Grazac} alt="Grazac" className="moving-img" />
 
             <img src={Afex} alt="Afex" className="moving-img" />
@@ -81,7 +81,7 @@ const Hero = () => {
             <img src={Technomy} alt="Technomy" className="moving-img" />
 
             <img src={Daily} alt="Daily" className="moving-img" />
-          </div> */}
+          </div>
         </div>
       </div>
 

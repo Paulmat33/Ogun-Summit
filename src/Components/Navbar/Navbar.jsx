@@ -1,5 +1,4 @@
-// // src\Components\Navbar\Navbar.jsx
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/footer-logo.png";
 import arrow from "../../assets/arrow.png";
@@ -26,13 +25,14 @@ const Navbar = () => {
         <li>Store</li>
         <li>Exhibitors</li>
       </nav>
-
+      
       <div>
         <button className="register">
           Register
-          <img src={rightarrow} alt="arrow" />{" "}
+          <img src={rightarrow} alt="arrow" />
         </button>
       </div>
+
       <div>
         <FaBars className="bar" onClick={handleMobileNav} />
       </div>

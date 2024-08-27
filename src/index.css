@@ -6,15 +6,15 @@
   --inter: "Inter", sans-serif;
   --green:#178A2D;
   --lightgreen:#ACFAAC;
-  --darkblack:#101611;
+  --dark-black:#101611;
   --orange:#FA6C20;
-  --offwhite:#F7F8F8;
+  --off-white:#F7F8F8;
   --border:#F2F3F4;
   --white:#FFFFFF;
-  --textcol:#627587;
+  --text-col:#627587;
   --black:#23323F;
-  --lightwhite:#F2F9FF;
-  --lightsub:#B0C5D6;
+  --light-white:#F2F9FF;
+  --light-sub:#B0C5D6;
 }
 
 *{
@@ -35,6 +35,13 @@
   .container{
     padding-left: 70px;
     padding-right: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

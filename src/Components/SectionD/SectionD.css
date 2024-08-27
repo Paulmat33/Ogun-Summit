@@ -19,7 +19,7 @@
 }
 .sectionD-heading p {
   font-family: var(--inter);
-  color: var(--textcol);
+  color: var(--text-col);
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -105,7 +105,7 @@
 }
 .sectionD-last-text p {
   font-family: var(--inter);
-  color: var(--textcol);
+  color: var(--text-col);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

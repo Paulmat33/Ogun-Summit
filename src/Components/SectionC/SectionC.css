@@ -28,7 +28,7 @@
   line-height: 22px;
   letter-spacing: 0.20000000298023224px;
   text-align: left;
-  color: var(--textcol);
+  color: var(--text-col);
   padding-bottom: 24px;
 }
 .register-2 {
@@ -68,7 +68,7 @@
 }
 .plan {
   font-family: var(--inter);
-  color: var(--textcol);
+  color: var(--text-col);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -105,9 +105,9 @@
 .off-conference {
   width: 166px;
   padding: 8px 20.5px;
-  background-color: var(--offwhite);
+  background-color: var(--off-white);
   font-family: var(--inter);
-  color: var(--textcol);
+  color: var(--text-col);
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -119,9 +119,9 @@
   padding: 8px 20.5px;
   border-radius: 0px 8px 8px 0px;
   font-family: var(--inter);
-  background-color: var(--offwhite);
+  background-color: var(--off-white);
   font-family: var(--inter);
-  color: var(--textcol);
+  color: var(--text-col);
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -173,7 +173,7 @@
   letter-spacing: 0.20000000298023224px;
   text-align: left;
 }
-.confrence-day h5 {
+.conference-day h5 {
   padding-top: 32px;
   padding-bottom: 16px;
   font-family: var(--inter);
@@ -191,7 +191,7 @@
   line-height: 22px;
   letter-spacing: 0.20000000298023224px;
   text-align: left;
-  color: var(--textcol);
+  color: var(--text-col);
   padding-bottom: 12px;
 }
 

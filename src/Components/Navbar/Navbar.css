@@ -7,7 +7,6 @@
 }
 .nav {
   display: flex;
-  flex-direction: row;
   list-style: none;
   align-items: center;
   padding-left: 213px;
@@ -17,7 +16,7 @@
 li {
   padding-left: 16px;
   font-family: var(--inter);
-  color: var(--textcol);
+  color: var(--text-col);
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
@@ -55,29 +54,18 @@ li {
 }
 
 @media (max-width: 1024px) {
-  nav {
-    padding-left: 100px;
+  .nav {
+    padding-left: 150px;
     padding-right: 150px;
-    gap: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  nav {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .nav {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    gap: 16px;
-  }
+  
+.nav{
+  padding-left: 50px;
+  padding-right: 50px;
 }
-
 @media (max-width: 425px) {
   .header {
     justify-content: space-between;
@@ -167,4 +155,5 @@ li {
     text-align: center;
     border: none;
   }
+}
 }
