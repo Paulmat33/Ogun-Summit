@@ -13,6 +13,14 @@ const SectionB = () => {
         </p>
       </div>
 
+      <div className="sectionB-text-sm">
+        <h2>We’ve made a real impact in people’s lives.</h2>
+        <p>
+          Watch a glimpse of how we improved the lives of pupils in the local
+          community and gave them access to ICT.
+        </p>
+      </div>
+
       <div className="video">
         {/* <video src="https://ogunsummit.com/wp-content/uploads/2021/10/Screen-Shot-2021-10-20-at-11.57.50-PM-1-1024x576.png" controls autoPlay muted loop></video> */}
         <img src={video} alt="video" />

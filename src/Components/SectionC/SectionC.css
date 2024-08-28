@@ -28,8 +28,7 @@
   line-height: 22px;
   letter-spacing: 0.20000000298023224px;
   text-align: left;
-  color: var(--text-col);
-  padding-bottom: 24px;
+  color: var(--text-col);  padding-bottom: 24px;
 }
 .register-2 {
   display: flex;
@@ -86,26 +85,20 @@
   margin: 0 auto;
   align-items: center;
   width: 502px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
+  border-radius: 8px;
+  background-color: var(--off-white);
 }
-.btn1 {
+.off-conference:hover {
   background: var(--orange);
   width: 166px;
   padding: 8px 12px;
   border-radius: 8px;
   border: none;
-  font-family: var(--inter);
-  color: var(--white);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-  text-align: left;
 }
 .off-conference {
   width: 166px;
-  padding: 8px 20.5px;
-  background-color: var(--off-white);
+  padding: 8px 12px;
   font-family: var(--inter);
   color: var(--text-col);
   font-size: 18px;
@@ -113,20 +106,7 @@
   line-height: 24px;
   letter-spacing: -0.5px;
   text-align: center;
-}
-.all {
-  width: 166px;
-  padding: 8px 20.5px;
-  border-radius: 0px 8px 8px 0px;
-  font-family: var(--inter);
-  background-color: var(--off-white);
-  font-family: var(--inter);
-  color: var(--text-col);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-  text-align: center;
+  cursor: pointer;
 }
 .event {
   display: flex;
@@ -149,8 +129,8 @@
 }
 .event-date {
   background: var(--white);
-  border-left: 2px solid#7A8C6B;
-  /* border-radius: 12px; */
+  border-left: 2px solid #7a8c6b;
+  border-radius: 12px;
   padding: 8px 16px;
 }
 .event-date h5 {
@@ -209,4 +189,98 @@
     width: 45%;
   }
 }
+@media (max-width: 425px) {
+  .sectionC {
+    padding-top: 80px;
+  }
+  .showcase {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 80px;
+    width: 335px;
+  }
+  .showcase-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    width: 335px;
+  }
+  .showcase-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    width: 335px;
+  }
+  .showcase-2 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    width: 335px;
+  }
+  .schedule {
+    width: 335px;
+  }
+  .schedule h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+  .plan {
+    display: none;
+  }
+  .digital {
+    display: block;
+    font-family: var(--inter);
+    color: var(--text-col);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    width: 310px;
+  }
+  .tab {
+    justify-content: left;
+    margin: 48px 0px;
+    width: 100%;
 
+    border-radius: 8px;
+  }
+  .off-conference {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+  .event {
+flex-direction: column;
+    align-items: center;
+    padding-bottom: 34px;
+  }
+  .event-2 {
+    padding: 16px;
+    width: 335px;
+    border-radius: 16px;
+  }
+  .conference-day h5 {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    padding: 32px 16px 12px;
+  }
+  .agenda-list p{
+    padding: 12px;
+  }
+  .event-4 {
+    padding: 16px;
+    width: 335px;
+    border-radius: 16px;
+    margin-top: 25px;
+  }
+}

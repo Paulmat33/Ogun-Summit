@@ -100,4 +100,85 @@
     font-size: 35px;
   }
 }
+@media (max-width: 425px) {
+  .section-A h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    width: 218px;
+  }
+  .section-Ap {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    width: 320px;
+  }
+  .attendees {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .attendees img {
+    width: 100%;
+  }
+  .attendees-number {
+    display: none;
+  }
+  .attendees-number-sm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin-top: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 80px;
+  }
 
+  .attendees-number-div2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    margin-right: 30px;
+    animation: moveTextSm 10s linear infinite;
+  }
+  @keyframes moveTextSm {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-150%);
+    }
+  }
+  .number-plus1 {
+    font-family: var(--inter);
+    color: var(--light-white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+  .number-text2 {
+    font-family: var(--inter);
+    color: var(--light-white);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-A{
+    padding-top: 80px;
+  }
+  .section-Ap {
+    width: 100%;
+}
+}

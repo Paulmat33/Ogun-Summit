@@ -1,4 +1,3 @@
-import React from "react";
 import "./SectionA.css";
 import arrow from "../../assets/arrow-black.png";
 import Attendees from "../../assets/Attendees.png";
@@ -48,7 +47,7 @@ const SectionA = () => {
         <div className="attendees-number-sm">
           <div className="attendees-number-div2">
             <p className="number-plus1">5000+</p>
-            <p className="number-text1">Attendees</p>
+            <p className="number-text2">Attendees</p>
           </div>
 
           <div className="attendees-number-div2">

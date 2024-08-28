@@ -54,9 +54,9 @@ const SectionC = () => {
       </div>
 
       <div className="tab">
-        <button className="btn1">Conference days</button>
+        <p className="off-conference">Conference days</p>
         <p className="off-conference">Off conference</p>
-        <p className="all">All</p>
+        <p className="off-conference">All</p>
       </div>
 
       <div className="event">
@@ -88,7 +88,7 @@ const SectionC = () => {
           </div>
 
           <div>
-            <div className="confrence-day">
+            <div className="conference-day">
               <h5>Conference Day 2</h5>
             </div>
             <div className="agenda-list">
