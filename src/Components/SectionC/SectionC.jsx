@@ -7,7 +7,7 @@ const SectionC = () => {
   return (
     <div className="sectionC container">
       <div className="showcase">
-        <img src={Group} alt="Group" />
+        <img src={Group} alt="Group" className="showcase-img" />
         <div className="showcase-text">
           <h2>
             Would you like to showcase your startup or business to over 5,000
@@ -36,10 +36,10 @@ const SectionC = () => {
           </p>
           <button className="register-2">
             Apply to conduct a masterclass
-            <img src={rightarrow} alt="arrow" />
+            <img src={rightarrow} alt="arrow"/>
           </button>
         </div>
-        <img src={Group2} alt="Group" />
+        <img src={Group2} alt="Group" className="showcase-img" />
       </div>
 
       <div className="schedule">

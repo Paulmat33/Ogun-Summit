@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   height: 172px;
   margin-top: 100px;
-  background-position: center;
+  background-position: contain;
+  background-size: cover;
 }
 .footer {
   background: var(--dark-black);
@@ -57,7 +58,11 @@
   letter-spacing: 0.20000000298023224px;
   text-align: left;
 }
-
+@media (max-width: 768px) {
+.footer-color {
+height: 70px;
+}
+}
 @media (max-width: 425px) {
   .footer-color {
     height: 87px;

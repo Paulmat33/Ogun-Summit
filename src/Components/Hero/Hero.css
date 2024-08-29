@@ -1,8 +1,6 @@
 .hero {
   background-image: url("../../assets/Lines-1.png");
   background-repeat: no-repeat;
-  background-position: center;
-  /* width: 100%; */
 }
 .hero-section {
   margin: 0 auto;
@@ -106,6 +104,7 @@ span {
   height: 172px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .countdown {
   background: var(--dark-black);

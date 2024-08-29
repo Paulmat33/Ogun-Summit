@@ -28,7 +28,8 @@
   line-height: 22px;
   letter-spacing: 0.20000000298023224px;
   text-align: left;
-  color: var(--text-col);  padding-bottom: 24px;
+  color: var(--text-col);
+  padding-bottom: 24px;
 }
 .register-2 {
   display: flex;
@@ -53,7 +54,15 @@
   justify-content: space-between;
   padding-bottom: 100px;
 }
-
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 525px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
 .schedule h1 {
   font-family: var(--platypi);
   color: var(--black);
@@ -62,7 +71,6 @@
   line-height: 48px;
   letter-spacing: -1px;
   text-align: center;
-  padding-top: 100px;
   padding-bottom: 16px;
 }
 .plan {
@@ -189,15 +197,26 @@
     width: 45%;
   }
 }
+
+@media (max-width: 768px) {
+  .showcase-img {
+    width: 50%;
+    height: 50%;
+  }
+  .showcase-text h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 @media (max-width: 425px) {
   .sectionC {
     padding-top: 80px;
   }
   .showcase {
-    display: flex;
     flex-direction: column-reverse;
-    padding-bottom: 80px;
-    width: 335px;
+  }
+  .showcase-img {
+    width: 100%;
   }
   .showcase-text h2 {
     font-size: 24px;
@@ -221,8 +240,10 @@
     padding-bottom: 100px;
     width: 335px;
   }
+
   .schedule {
-    width: 335px;
+    max-width: 335px;
+    padding-top: 80px;
   }
   .schedule h1 {
     font-size: 24px;
@@ -244,29 +265,28 @@
     letter-spacing: 0.20000000298023224px;
     text-align: center;
     width: 310px;
+    padding-bottom: 24px;
   }
   .tab {
-    justify-content: left;
-    margin: 48px 0px;
-    width: 100%;
-
+    width: 335px;
+    margin-bottom: 48px;
     border-radius: 8px;
   }
   .off-conference {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
     line-height: 18px;
     letter-spacing: -0.5px;
-    text-align: left;
+    text-align: center;
   }
   .event {
-flex-direction: column;
+    flex-direction: column;
     align-items: center;
     padding-bottom: 34px;
   }
   .event-2 {
     padding: 16px;
-    width: 335px;
+    width: 100%;
     border-radius: 16px;
   }
   .conference-day h5 {
@@ -274,12 +294,12 @@ flex-direction: column;
     padding-bottom: 16px;
     padding: 32px 16px 12px;
   }
-  .agenda-list p{
+  .agenda-list p {
     padding: 12px;
   }
   .event-4 {
     padding: 16px;
-    width: 335px;
+    width: 100%;
     border-radius: 16px;
     margin-top: 25px;
   }
