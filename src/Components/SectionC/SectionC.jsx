@@ -1,9 +1,16 @@
+import { useState } from "react";
 import "./SectionC.css";
 import Group from "../../assets/Group-1.png";
 import Group2 from "../../assets/Group-2.png";
 import rightarrow from "../../assets/arrow-right.png";
 
 const SectionC = () => {
+  // function ConferenceDays() {
+  const [activeTab, setActiveTab] = useState("conference-days");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
   return (
     <div className="sectionC container">
       <div className="showcase">
@@ -36,7 +43,7 @@ const SectionC = () => {
           </p>
           <button className="register-2">
             Apply to conduct a masterclass
-            <img src={rightarrow} alt="arrow"/>
+            <img src={rightarrow} alt="arrow" />
           </button>
         </div>
         <img src={Group2} alt="Group" className="showcase-img" />
@@ -53,57 +60,154 @@ const SectionC = () => {
         </p>
       </div>
 
-      <div className="tab">
-        <p className="off-conference">Conference days</p>
-        <p className="off-conference">Off conference</p>
-        <p className="off-conference">All</p>
-      </div>
-
-      <div className="event">
-        <div className="event-2">
-          <div className="event-date">
-            <h5>Wednesday</h5>
-            <p>30th October</p>
-          </div>
-
-          <div>
-            <div className="conference-day">
-              <h5>Conference Day 1</h5>
-            </div>
-            <div className="agenda-list">
-              <p>Art and Culture</p>
-              <p>Entertainment Industry</p>
-              <p>Creative Economy</p>
-              <p>Cultural and Art Exhibition</p>
-              <p>Outdoor Party</p>
-              <p>Demos</p>
-            </div>
-          </div>
+      <div>
+        <div className="tab">
+          <p
+            className={`off-conference ${
+              activeTab === "conference-days" ? "active" : ""
+            }`}
+            onClick={() => handleTabClick("conference-days")}
+          >
+            Conference days
+          </p>
+          <p
+            className={`off-conference ${
+              activeTab === "off-conference" ? "active" : ""
+            }`}
+            onClick={() => handleTabClick("off-conference")}
+          >
+            Off conference
+          </p>
+          <p
+            className={`off-conference ${activeTab === "all" ? "active" : ""}`}
+            onClick={() => handleTabClick("all")}
+          >
+            All
+          </p>
         </div>
 
-        <div className="event-4">
-          <div className="event-date">
-            <h5>Thursday</h5>
-            <p>31st October</p>
-          </div>
+        <div className="event">
+          {activeTab === "conference-days" && (
+            <div className="event-days-1">
+              <div className="event-2">
+                <div className="event-date">
+                  <h5>Wednesday</h5>
+                  <p>30th October</p>
+                </div>
 
-          <div>
-            <div className="conference-day">
-              <h5>Conference Day 2</h5>
+                <div>
+                  <div className="conference-day">
+                    <h5>Conference Day 1</h5>
+                  </div>
+                  <div className="agenda-list">
+                    <p>Art and Culture</p>
+                    <p>Entertainment Industry</p>
+                    <p>Creative Economy</p>
+                    <p>Cultural and Art Exhibition</p>
+                    <p>Outdoor Party</p>
+                    <p>Demos</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="event-4">
+                <div className="event-date">
+                  <h5>Thursday</h5>
+                  <p>31st October</p>
+                </div>
+
+                <div>
+                  <div className="conference-day">
+                    <h5>Conference Day 2</h5>
+                  </div>
+                  <div className="agenda-list">
+                    <p>Funding for Business/Startup</p>
+                    <p>Technology and Mental Health</p>
+                    <p>Blockchain Opportunity for Africa</p>
+                    <p>Think Local: Go Global</p>
+                    <p>Free Masterclass Sessions</p>
+                    <p>Announcement of Winners for Startup Competition</p>
+                    <p>Demos from Partners</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="agenda-list">
-              <p>Funding for Business/Startup</p>
-              <p>Technology and Mental Health</p>
-              <p>Blockchain Opportunity for Africa</p>
-              <p>Think Local: Go Global</p>
-              <p>Free Masterclass Sessions</p>
-              <p>Announcement of Winners for Startup Competition</p>
-              <p>Demos from Partners</p>
+          )}
+
+          {activeTab === "off-conference" && (
+            <div className="event-4">
+              <div className="event-date">
+                <h5>Thursday</h5>
+                <p>31st October</p>
+              </div>
+
+              <div>
+                <div className="conference-day">
+                  <h5>Conference Day 2</h5>
+                </div>
+                <div className="agenda-list">
+                  <p>Funding for Business/Startup</p>
+                  <p>Technology and Mental Health</p>
+                  <p>Blockchain Opportunity for Africa</p>
+                  <p>Think Local: Go Global</p>
+                  <p>Free Masterclass Sessions</p>
+                  <p>Announcement of Winners for Startup Competition</p>
+                  <p>Demos from Partners</p>
+                </div>
+              </div>
             </div>
-          </div>
+          )}
+
+          {activeTab === "all" && (
+            <div className="event-all">
+              <div className="event-2">
+                <div className="event-date">
+                  <h5>Wednesday</h5>
+                  <p>30th October</p>
+                </div>
+
+                <div>
+                  <div className="conference-day">
+                    <h5>Conference Day 1</h5>
+                  </div>
+                  <div className="agenda-list">
+                    <p>Art and Culture</p>
+                    <p>Entertainment Industry</p>
+                    <p>Creative Economy</p>
+                    <p>Cultural and Art Exhibition</p>
+                    <p>Outdoor Party</p>
+                    <p>Demos</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="event-4">
+                <div className="event-date">
+                  <h5>Thursday</h5>
+                  <p>31st October</p>
+                </div>
+
+                <div>
+                  <div className="conference-day">
+                    <h5>Conference Day 2</h5>
+                  </div>
+                  <div className="agenda-list">
+                    <p>Funding for Business/Startup</p>
+                    <p>Technology and Mental Health</p>
+                    <p>Blockchain Opportunity for Africa</p>
+                    <p>Think Local: Go Global</p>
+                    <p>Free Masterclass Sessions</p>
+                    <p>Announcement of Winners for Startup Competition</p>
+                    <p>Demos from Partners</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
+    // </div>
   );
 };
 

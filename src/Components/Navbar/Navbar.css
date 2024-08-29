@@ -157,3 +157,12 @@ li {
   }
 }
 }
+
+@media (max-width: 320px) {
+  .mobile-nav-container {
+    top: 60px;
+    left: 15px;
+    width: 90%;
+    background-color: #fff;
+  }
+}

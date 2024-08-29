@@ -252,3 +252,9 @@
     padding-top: 80px;
   }
 }
+@media (max-width: 320px) {
+  .sectionD-heading h1{
+text-align: center; 
+ }
+ 
+}
