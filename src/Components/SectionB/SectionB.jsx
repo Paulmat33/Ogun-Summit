@@ -1,6 +1,9 @@
 import "./SectionB.css";
 import video from "../../assets/Video.png";
 import fire from "../../assets/fire.png";
+import northAmerica from "../../assets/north-america.png";
+import code from "../../assets/code.png";
+import rocket from "../../assets/rocket.png";
 
 const SectionB = () => {
   return (
@@ -47,6 +50,30 @@ const SectionB = () => {
             You can directly and indirectly learn and engage with industry
             experts, offering valuable opportunities to gain deeper insights
             into your areas of interest
+          </p>
+        </div>
+
+        <div className="sectionB-text-3">
+          <img src={northAmerica} alt="fire" />
+          <h4>Connect and network</h4>
+          <p>
+          We bring together the best talents in Nigeria tech ecosystem to create opportunities for professional growth and aid collaboration and partnerships.
+          </p>
+        </div>
+
+        <div className="sectionB-text-3">
+          <img src={code} alt="fire" />
+          <h4>Discover new technology trends</h4>
+          <p>
+          The world is growing at a very fast pace with new technologies like AI and blockchain having a strong effect on our daily lives. We analyze and help you on how to best adapt for these changes
+          </p>
+        </div>
+
+        <div className="sectionB-text-3">
+          <img src={rocket} alt="fire" />
+          <h4>Have Fun and Unwind</h4>
+          <p>
+          Our ambience and environment provides the right avenue and space to regain motivation and energy not just to grow your talent but to innovate and create new ideas.
           </p>
         </div>
       </div>
