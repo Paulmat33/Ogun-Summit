@@ -1,5 +1,4 @@
 import "./SectionB.css";
-import video from "../../assets/Video.png";
 import fire from "../../assets/fire.png";
 import northAmerica from "../../assets/north-america.png";
 import code from "../../assets/code.png";
@@ -25,8 +24,7 @@ const SectionB = () => {
       </div>
 
       <div className="video">
-        {/* <video src="https://ogunsummit.com/wp-content/uploads/2021/10/Screen-Shot-2021-10-20-at-11.57.50-PM-1-1024x576.png" controls autoPlay muted loop></video> */}
-        <img src={video} alt="video" />
+        <iframe width="900" height="432" src="https://www.youtube.com/embed/E5Y0KjFYG2Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <div className="sectionB-text-2">
