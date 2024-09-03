@@ -31,7 +31,7 @@
   /* overflow: hidden; */
 }
 
-@media (max-width:1024px){
+@media (max-width:1200px){
   .container{
     padding-left: 70px;
     padding-right: 70px;
@@ -52,10 +52,10 @@
   }
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .container{
     padding-left: 10px;
     padding-right: 10px;
     overflow-x: hidden;
   }
-}
+} */

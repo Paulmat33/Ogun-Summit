@@ -14,28 +14,30 @@ const Navbar = () => {
 
   return (
     <div className="header container">
-      <img src={Logo} alt="logo" className="logo-img" />
+      <div className="header-nav">
+        <img src={Logo} alt="logo" className="logo-img" />
 
-      <nav className="nav">
-        <li>Home</li>
-        <li className="arrow">
-          About <img src={arrow} alt="arrow" />
-        </li>
-        <li>Sponsors</li>
-        <li>Store</li>
-        <li>Exhibitors</li>
-      </nav>
-      
-      <div>
-        <button className="register">
-          Register
-          <img src={rightarrow} alt="arrow" />
-        </button>
-      </div>
+        <nav className="nav">
+          <li>Home</li>
+          <li className="arrow">
+            About <img src={arrow} alt="arrow" />
+          </li>
+          <li>Sponsors</li>
+          <li>Store</li>
+          <li>Exhibitors</li>
+        </nav>
 
+        <div>
+          <button className="register">
+            Register
+            <img src={rightarrow} alt="arrow" />
+          </button>
+        </div>
       <div>
         <FaBars className="bar" onClick={handleMobileNav} />
       </div>
+      </div>
+
 
       {/* Mobile Nav */}
       {mobileNav && (

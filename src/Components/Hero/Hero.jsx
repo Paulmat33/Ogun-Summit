@@ -76,7 +76,7 @@ const Hero = () => {
 
             <img src={Afex} alt="Afex" className="moving-img" />
 
-            <img src={Ogun} alt="Ogun" className="moving-img" />
+            <img src={Ogun} alt="Ogun" className="moving-img2" />
 
             <img src={Technomy} alt="Technomy" className="moving-img" />
 

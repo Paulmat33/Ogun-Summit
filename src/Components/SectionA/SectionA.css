@@ -84,7 +84,7 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .section-A {
     margin-top: px;
   }
@@ -98,6 +98,12 @@
   }
   .number-plus {
     font-size: 35px;
+  }
+}
+@media(max-width:1280px){
+  .attendees{
+    width: 100%;
+    gap: 8px;
   }
 }
 @media (max-width: 425px) {

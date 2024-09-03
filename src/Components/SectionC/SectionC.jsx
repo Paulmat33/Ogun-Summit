@@ -207,7 +207,6 @@ const SectionC = () => {
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 

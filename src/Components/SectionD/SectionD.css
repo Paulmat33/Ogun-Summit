@@ -125,7 +125,7 @@
   padding-top: 170px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .sectionD-images img {
     width: 100%;
   }
@@ -147,6 +147,19 @@
   }
   .frame {
     width: 50%;
+  }
+}
+@media(max-width: 1024px){
+  .sectionD-right-col h1 {
+    font-size: 35px;
+    width: 95%;
+  }
+  
+}
+@media (max-width: 1280px) {
+  .image-2 img{
+width: 100%;
+  
   }
 }
 @media (max-width: 768px) {

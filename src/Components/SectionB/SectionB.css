@@ -35,6 +35,7 @@
 }
 .video {
   margin-left: 100px;
+  /* margin-right: 100px; */
 }
 iframe{
   border-radius: 20px;
@@ -95,7 +96,7 @@ iframe{
   color: var(--light-sub);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .video {
     margin-left: 0px;
   }
@@ -103,11 +104,18 @@ iframe{
     padding-top: 70px;
   }
 }
+@media(max-width:1000px){
+  iframe{
+    width: 100%;
+  }
+}
 
 @media (max-width: 768px) {
-  /* .video {
+  .video {
     margin-left: 10px;
-  } */
+    /* margin-right: 10px; */
+  }
+
   iframe{
     width: 100%;
   }

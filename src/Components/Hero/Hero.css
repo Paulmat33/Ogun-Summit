@@ -50,7 +50,7 @@ span {
 .register-2 {
   display: flex;
   align-items: center;
-  padding: 10px 12px 10px 12px;
+  padding: 10px 12px;
   gap: 4px;
   border-radius: 4px;
   outline: none;
@@ -174,21 +174,34 @@ span {
   color: #b0c5d6;
 }
 
-@media (max-width: 1024px) {
-  /* .countdown {
-    left: 150px;
-    right: 150px;
-  } */
+@media (max-width: 1200px) {
   .countdown {
     left: 50%;
   }
 }
 @media (max-width: 768px) {
-  .background-div{
+  .hero-section {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .hero-section h1 {
+    font-size: 50px;
+    line-height: 54px;
+  }
+  span {
+    font-size: 50px;
+    line-height: 54px;
+  }
+  .hero-section p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .background-div {
     height: 100px;
   }
 }
-@media(max-width: 425px){
+@media (max-width: 425px) {
   .hero-section {
     margin: 0 20px;
     width: 335px;
@@ -214,73 +227,77 @@ span {
     text-align: left;
     padding-bottom: 24px;
   }
-.button {
-  justify-content: flex-start;
-  padding-bottom: 80px;
+  .button {
+    justify-content: flex-start;
+    padding-bottom: 80px;
+  }
+  .support h5 {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    padding-bottom: 8px;
+  }
+  .sponsor-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+  .moving-img {
+    width: 18%;
+  }
+  .moving-img2{
+    width: 10%;
+  }
+  .background-div {
+    height: 84px;
+  }
+  .countdown {
+    left: 50%;
+  }
+  .countdown {
+    flex-direction: column;
+    width: 335px;
+  }
+  .number {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+  .days-text {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .date-number {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+  .date-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+  }
 }
-.support h5 {
-  font-size: 12px;
-  line-height: 20px;
-  text-align: left;
-  padding-bottom: 8px;
-}
-.sponsor-img {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 41.39px;
-  overflow-x: hidden;
-}
-.background-div{
-  height: 84px;
-}
-.countdown {
-  left: 44%;
-}
-.countdown{
- flex-direction: column;
-  width: 335px;
-}
-.number{
-  font-size: 12px;
-line-height: 20px;
-letter-spacing: 3px;
-text-align: left;
-}
-.days-text{
-font-size: 14px;
-line-height: 22px;
-letter-spacing: 0.20000000298023224px;
-text-align: center;
 
-}
-.date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.date-number{
-font-size: 12px;
-line-height: 20px;
-letter-spacing: 3px;
-text-align: left;
-}
-.date-text{
-font-size: 12px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0.20000000298023224px;
-text-align: center;
-}
-}
-
-@media( max-width:375px){
+@media (max-width: 375px) {
   .countdown {
     left: 50%;
   }
 }
 
-@media (max-width:320px){
+@media (max-width: 320px) {
   .hero-section {
     margin: 0 15px;
     width: 100%;
@@ -306,9 +323,13 @@ text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
-    width:100%;
-    overflow-x: hidden;
+    gap: 8px;
+  }
+  .moving-img {
+    width: 17%;
+  }
+  .moving-img2{
+    width: 10%;
   }
   .countdown {
     left: 50%;

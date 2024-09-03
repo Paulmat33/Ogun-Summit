@@ -24,7 +24,7 @@ const SectionB = () => {
       </div>
 
       <div className="video">
-        <iframe width="900" height="432" src="https://www.youtube.com/embed/E5Y0KjFYG2Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="900" height="432" src="https://www.youtube.com/embed/E5Y0KjFYG2Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
 
       <div className="sectionB-text-2">
